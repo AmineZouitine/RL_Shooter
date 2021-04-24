@@ -10,7 +10,7 @@ The map can be totally randomly generated, choosing obviously its size, the obst
 ## Enemy chases the agent with a Navmesh
 
 ![Nav](https://user-images.githubusercontent.com/53370597/115955179-9ee15b80-a4e4-11eb-9031-187e0668fb2b.PNG)
-Often in this kind of situation where the map is randomly generated and we want integers to be able to move in a natural way from a point A to a point B, the NavMesh is often the best solution (even if quite expensive)
+Often in this kind of situation where the map is randomly generated and we want entities to be able to move in a natural way from a point A to a point B, the NavMesh is often the best solution (even if quite expensive)
 
 Video : https://youtu.be/SzOyQpriOl8 (A hd video is coming soon)
 
