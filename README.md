@@ -1,8 +1,7 @@
 # Welcome to the Shooter-AI !
 
 
-https://user-images.githubusercontent.com/53370597/115971036-c1e82b80-a535-11eb-98c6-d70dc739262a.mp4
-
+https://user-images.githubusercontent.com/53370597/115971282-22c43380-a537-11eb-9335-ed250e88feef.mp4
 
 In this RL project on Unity, the little green robot (the agent) has to survive as long as possible in front of red robots that run at him. If he is in contact with one of them, he loses. The agent can shoot a green bullet that bounces on the walls (5 times max), he can shoot every 2 seconds, moreover he can move and rotate freely.
 
