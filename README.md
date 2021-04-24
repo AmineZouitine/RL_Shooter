@@ -1,8 +1,11 @@
 # Welcome to the Shooter-AI !
-![AI](https://user-images.githubusercontent.com/53370597/115914864-06a29280-a462-11eb-87e7-41d66c3af589.PNG)
+
+https://user-images.githubusercontent.com/53370597/115968388-47181400-a527-11eb-9258-1b2cceaec859.mp4
+
 In this RL project on Unity, the little green robot (the agent) has to survive as long as possible in front of red robots that run at him. If he is in contact with one of them, he loses. The agent can shoot a green bullet that bounces on the walls (5 times max), he can shoot every 2 seconds, moreover he can move and rotate freely.
 
 
+ 
 ## Random card generation
 ![FotoJet](https://user-images.githubusercontent.com/53370597/115955055-e9160d00-a4e3-11eb-8fb6-3fb8534ad366.jpg)
 The map can be totally randomly generated, choosing obviously its size, the obstacle ratio (0 to 1), the number of enemies per second, the size of the obstacles etc..
