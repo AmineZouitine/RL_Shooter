@@ -16,6 +16,23 @@ The map can be totally randomly generated, choosing obviously its size, the obst
 ![Nav](https://user-images.githubusercontent.com/53370597/115955179-9ee15b80-a4e4-11eb-9031-187e0668fb2b.PNG)
 Often in this kind of situation where the map is randomly generated and we want entities to be able to move in a natural way from a point A to a point B, the NavMesh is often the best solution (even if quite expensive)
 
+## Shooting
+https://user-images.githubusercontent.com/53370597/116367721-2980ce00-a7f7-11eb-8623-72bd56693e7b.mp4
 
-
-
+The agent can say a bullet every 2 seconds, this one must bounce in a realistic way in the environment.
+After a lot of tests, my last test seems to work the best, even if I'm thinking about another logic that could avoid sometimes some hazardous behavior
+```csharp
+ private void BulletReflection(RaycastHit hit)
+    {
+       
+        transform.position = hit.point;  
+        Vector3 reflection = Vector3.Reflect(transform.forward, hit.normal);
+        float rotation = 90 - Mathf.Atan2(reflection.z, reflection.x) * Mathf.Rad2Deg;
+        transform.eulerAngles = new Vector3(0, rotation, 0);
+        m_currentBouce++; // We can use a Properties with an if in the set
+        if (m_currentBouce >= m_maxBouce)
+        {
+            DestroyBullet();
+        }
+    }
+```
