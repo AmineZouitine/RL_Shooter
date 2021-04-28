@@ -19,8 +19,8 @@ Often in this kind of situation where the map is randomly generated and we want 
 ## Shooting
 https://user-images.githubusercontent.com/53370597/116367721-2980ce00-a7f7-11eb-8623-72bd56693e7b.mp4
 
-The agent can say a bullet every 2 seconds, this one must bounce in a realistic way in the environment.
-After a lot of tests, my last test seems to work the best, even if I'm thinking about another logic that could avoid sometimes some hazardous behavior
+The agent can shoot a bullet every 2 seconds, this one must bounce in a realistic way in the environment.
+After a lot of tests, my last test seems to work the best, even if I'm thinking about another logic that could avoid sometimes some hazardous behavior.
 ```csharp
  private void BulletReflection(RaycastHit hit)
     {
