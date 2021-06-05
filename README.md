@@ -1,4 +1,4 @@
-# 🔫 Welcome to the Shooter-AI ! 🔫
+# 🔫 Welcome to the RL_Shooter ! 🔫
 
 
 https://user-images.githubusercontent.com/53370597/116051423-1db2d180-a668-11eb-8df7-dd9e61381641.mp4
