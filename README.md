@@ -21,18 +21,3 @@ https://user-images.githubusercontent.com/53370597/116367721-2980ce00-a7f7-11eb-
 
 The agent can shoot a bullet every 2 seconds, this one must bounce in a realistic way in the environment.
 After a lot of tests, my last test seems to work the best, even if I'm thinking about another logic that could avoid sometimes some hazardous behavior.
-```csharp
- private void BulletReflection(RaycastHit hit)
-    {
-       
-        transform.position = hit.point;  
-        Vector3 reflection = Vector3.Reflect(transform.forward, hit.normal);
-        float rotation = 90 - Mathf.Atan2(reflection.z, reflection.x) * Mathf.Rad2Deg;
-        transform.eulerAngles = new Vector3(0, rotation, 0);
-        m_currentBouce++; // We can use a Properties with an if in the set
-        if (m_currentBouce >= m_maxBouce)
-        {
-            DestroyBullet();
-        }
-    }
-```
